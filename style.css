@@ -1,0 +1,85 @@
+/*i am importing the font Montserrat from the google ,i can also copy the link and paste it on my header part,this should be the first line in style.css*/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+
+/*root folder for entire HTML*/
+*{
+     margin: 0;
+     padding: 0;
+}
+body{
+
+    font-family: 'Montserrat', sans-serif;/* selected from google in fonts copied font family,if i use link also this ios must*/
+    background-color: #eee;
+}
+.sidebar{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(../img/img1.jpeg);
+    background-repeat: no-repeat;
+    box-shadow: 5px 7px 25px #999;/*to create blur effect*/
+}
+.bottom-border{
+    border-bottom: 1px solid #eee;
+}
+.side-link{
+    transition: all .4s;
+   
+}
+.side-link:hover{
+    background-color: #444;
+    border-radius: 5px;
+}
+.current{
+    background-color: rgb(252, 38, 10);
+    border-radius: 5px;
+    box-shadow: 2px 5px 20px #111;
+    transition: all .4s;
+}
+.current:hover{
+    background-color: rgb(252, 64, 7);
+    transform: translateY(-1px);
+}
+.search{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+    transition: all .4s;
+}
+.search:focus{
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #f66454;
+}
+input{
+    color: #fff !important;
+}
+.btn-search{
+    border-radius: 50%;
+    padding: 12px 16px;
+    transition: all .4s;
+}
+.btn-search:hover{
+    background-color: #eee;
+    transform: translateY(-3px);
+}
+.notify-main{
+   position: relative;
+}
+.notify::after{
+    content: " ";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border-color: rgba(226, 36, 36, 0.925);
+    background-color: rgb(252, 38, 10);
+}
+.task-border{
+    border-left: 3px solid orangered;
+}
